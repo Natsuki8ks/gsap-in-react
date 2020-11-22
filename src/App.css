@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+:root {
+  --background-color: #e6ebee;
+  --blue-main: #2d3d8b;
+  --btn-color: #65b9ce;
+  --text-color: #3e3e3e;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
+  color: #5a5a5a;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 1440px; 
+  margin: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: var(--background-color);
+}
+.bannerMain {
+  height: 100vh;
+  flex-wrap: wrap;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.bannerMain-lft {
+  flex-basis: 35%;
+  margin-right: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bannerMain-lft h2 {
+  color: var(--blue-main);
+  font-size: 47px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.bannerMain .bannerMain-lft p {
+  color: var(--text-color);
+  font-size: 25px;
+}
+.bannerMain .bannerMain-rgt {
+  margin-left: 30px;
+}
+.bannerMain-rgt img {
+  width: 400px;
+  object-fit: cover;
+  margin-top: 30px;
+}
+.btn-primary {
+  padding: 17px 20px;
+  border: none;
+  background-color: var(--btn-color);
+  border-radius: 4px;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #ffffff;
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0px 30px;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+}
+nav .nav-items ul li {
+  display: inline;
+  padding-right: 20px;
+  font-size: 17px;
+  font-weight: 500;
+}
+nav .nav-logo{
+  font-weight: 800;
+  color: var(--blue-main);
+  font-size: 19px;;
+}
+.textWrapper {
+  background-color: transparent;
+  overflow: hidden;
+  height: 50px;
+}
+.content{
+  background-color: #ffffff;
+  padding: 30px 0px;
+}
+.content-main > div{
+  margin-bottom: 90px;
+}
+.App-section{
+  margin-top: 80px;
 }
